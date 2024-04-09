@@ -1,0 +1,35 @@
+.article-container {
+    color: var(--text-color-secondary);
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.date {
+    font-weight: 500;
+}
+
+.title {
+    color: var(--text-color-primary);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+
+.tag {
+    color: var(--tag-text-color);
+    font-weight: 500;
+}
+
+.tag span {
+    margin-right: 0.75rem;
+}
+
+.description {
+    margin: 1.5rem 0;
+}
+
+.read-more {
+    font-weight: 500;
+    color: var(--tag-text-color);
+}

@@ -1,0 +1,115 @@
+:root {
+    --overlay-color: rgba(255, 255, 255, .75);
+    --overlay-bg-color: rgb(229 231 235);
+    --shadow-color: rgba(0, 0, 0, .4);
+    --text-color-primary: rgb(17, 24, 39);
+    --text-color-regular: rgb(31, 41, 55);
+    --text-color-secondary: rgb(75, 85, 99);
+    --text-color-disabled: rgb(55, 65, 81);
+    --description-text-color:rgb(107 114 128);
+    --gradient-from: #ca8a04;
+    --gradient-to: #dc2626;
+    --tag-text-color: rgb(99, 102, 241);
+    --border-color: rgb(211, 214, 219);
+    --button-hover-bg-color: rgb(229 231 235);
+    --input-bg-color: rgb(243 244 246);
+    /* --border-color: rgb(209 213 219); */
+    --code-bg-color: #282c34;
+    -code-bg-color-light: #dfdcdcc4;
+}
+
+html.dark {
+    background-color: rgb(40, 44, 51);
+    --overlay-color: rgba(34, 39, 46, .75);
+    --overlay-bg-color: rgb(31 41 55);
+    --shadow-color: rgba(14, 116, 144, .5);
+    --text-color-primary: rgb(243 244 246);
+    --text-color-regular: rgb(255, 255, 255);
+    --text-color-secondary: rgb(156, 163, 175);
+    --text-color-disabled: rgb(209, 213, 219);
+    --description-text-color:rgb(156 163 175);
+    --gradient-from: #10b981;
+    --gradient-to: #65a30d;
+    --tag-text-color: rgb(129, 140, 248);
+    --border-color: rgb(59, 69, 85);
+    --button-hover-bg-color: rgb(55 65 81);
+    --input-bg-color: rgb(31 41 55);
+    /* --border-color: rgb(107 114 128); */
+    --code-bg-color: #222;
+    --code-bg-color-light: #dfdcdcc4;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blog-about {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.blog-about i {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.blog-about span {
+    margin-left: 0.5rem;
+    font-size: 1.125rem;
+    color: var(--text-color-secondary);
+}
+
+@media (min-width: 768px) {
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        /* width: 100%;
+      overflow-x: hidden; */
+    }
+
+    .placeholder {
+        display: none;
+    }
+
+    .howdy {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        line-height: 86px;
+        font-size: 4.5rem;
+        font-weight: 800;
+
+    }
+
+    .hello {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        /* 左边两列合并，宽度是右边一列的两倍 */
+    }
+
+    #setting,
+    #cross {
+        display: none;
+    }
+
+    .article-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: baseline;
+    }
+
+    .article-container .date {
+        margin-top: 0.75rem;
+
+    }
+}

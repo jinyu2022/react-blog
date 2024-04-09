@@ -1,0 +1,11 @@
+.title {
+    color: var(--text-color-primary);
+    font-size: 54px;
+    line-height: 64px;
+    margin: 1rem 0;
+}
+
+.tag {
+    color: var(--tag-text-color);
+    font-weight: 500;
+}

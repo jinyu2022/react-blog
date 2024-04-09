@@ -1,0 +1,65 @@
+#card {
+    perspective: 600px;
+    /*3d效果的透视距离*/
+    transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    #card:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.card {
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 2rem;
+    box-shadow: 2px 2px 4px var(--shadow-color);
+    height: fit-content;
+    /*剪裁掉多余的空白*/
+    transition: transform 0.05s ease;
+}
+
+.card-container {
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(31, 41, 55);
+    display: flex;
+    align-items: center;
+    color: rgb(229 231 235);
+}
+
+.card-content {
+    padding: 1rem 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.25rem;
+    color: var(--text-color-regular);
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-content h5 {
+    color: var(--text-color-secondary);
+    margin: 0.5rem 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.social-links {
+    color: var(--text-color-secondary);
+    margin-top: 20px;
+}
+
+.social-links div {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.social-links a+span {
+    color: rgb(156, 163, 175);
+}

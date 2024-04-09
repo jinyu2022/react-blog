@@ -1,0 +1,25 @@
+.gallery-item-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 8px 30px 0px;
+}
+.gallery-card-details{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.gallery-card-details p{
+    margin: 0;
+    color: var(--description-text-color);
+}
+
+.gallery-card-details p+p{
+    margin-top: .5rem;
+}
+.gallery-card-details a {
+    margin-top: 1.5rem;
+    color: var(--tag-text-color);
+}

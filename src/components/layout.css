@@ -1,0 +1,184 @@
+.header-nav {
+    padding: 0.75rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--overlay-color);
+    backdrop-filter: blur(8px);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.active span {
+    background-color: var(--button-hover-bg-color);
+    border-bottom: 0px;
+
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    /* 取消下划线 */
+    color: inherit;
+    /* 使用父元素的字体颜色 */
+}
+
+a>span {
+    box-sizing: border-box;
+    border-bottom: 0 solid rgb(75, 85, 99);
+}
+
+a>span:hover {
+    border-bottom: 2px solid rgb(75, 85, 99);
+}
+
+.nav-header {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-header span {
+    color: var(--text-color-primary);
+    margin-left: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.nav-header span:hover {
+    background-color: var(--button-hover-bg-color);
+    border-bottom: 0px;
+}
+
+.hello {
+    color: var(--text-color-secondary);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    align-items: start;
+}
+
+.howdy {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* line-height: 86px;
+    font-size: 4.5rem; */
+    font-weight: 800;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, var(--gradient-from), var(--gradient-to));
+}
+
+.howdy i {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin: 0 0.1em;
+    vertical-align: -0.1em;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 1em 1em;
+}
+
+.logo,
+.placeholder {
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.placeholder {
+    padding: 0.75rem;
+}
+
+.self-introduction,
+.self-about {
+    color: var(--text-color-primary);
+    line-height: 2rem;
+    font-size: 1.125em;
+}
+
+.self-about {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.self-about p {
+    color: var(--text-color-secondary);
+    margin-block-end: 0;
+}
+
+.self-about p+p {
+    margin-block-start: 0;
+}
+
+.self-introduction>div span {
+    font-weight: 500;
+}
+
+#typewriter+span {
+    animation: blink 0.8s linear infinite;
+}
+
+
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    margin-top: 4rem;
+    color: var(--text-color-secondary);
+}
+
+@media (max-width: 767px) {
+    /* .header-container {
+        box-sizing: border-box;
+        width: 100%;
+    } */
+
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(100%);
+        background-color: var(--overlay-bg-color);
+        width: 100vw;
+        height: 100vh;
+        opacity: .95;
+        z-index: 20;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .top-nav a {
+        padding: 1rem 0;
+    }
+
+    .top-nav span {
+
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+
+    }
+
+
+    .howdy {
+        font-size: 2.25rem;
+    }
+
+    #card {
+        display: none
+    }
+}
