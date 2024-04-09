@@ -1,7 +1,7 @@
 import BlogHeader from "../components/BlogHeader";
 import "./Snippets.css";
 
-function SnippetsCard() { }
+// function SnippetsCard() { }
 
 function Snippets() {
     return (
